@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="h-16 bg-gray-800 flex items-center justify-between px-6">
+    <header className="h-16 bg-gray-800 flex items-center justify-between px-6 border-b border-blue-400">
       <h1 className="text-white font-semibold">Hival Admin</h1>
 
       <button
