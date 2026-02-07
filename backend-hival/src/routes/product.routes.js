@@ -10,7 +10,7 @@ import { protect } from "../middlewares/auth.middleware.js";
 
 const router = Router();
 
-router.use(protect); //todas las rutas protegidas
+//router.use(protect); //todas las rutas protegidas
 
 router.post("/", createProduct);
 router.get("/", getProducts);
