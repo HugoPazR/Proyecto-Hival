@@ -3,6 +3,9 @@ import Login from "./pages/Login";
 import Products from "./pages/Products";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Clients from "./pages/Clients";
+import Sales from "./pages/Sales";
+import NewSale from "./pages/NewSale";
 
 export default function App() {
   return (
@@ -25,6 +28,17 @@ export default function App() {
           </ProtectedRoute>
         }
       />
+      <Route path="/sales" element={<Sales />} />
+      <Route
+        path="/sales/new"
+        element={
+          <ProtectedRoute>
+            <NewSale />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route path="/clients" element={<Clients />} />
       <Route path="*" element={<Navigate to="/dashboard" />} />
     </Routes>
   );
